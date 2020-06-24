@@ -64,8 +64,8 @@ Image credits: unsplash.com
 }
 .fade-carousel .carousel-indicators > li {
     margin: 0 2px;
-    background-color: #f39c12;
-    border-color: #f39c12;
+    background-color: #fff;
+    border-color: #fff;
     opacity: .7;
 }
 .fade-carousel .carousel-indicators > li.active {
@@ -93,10 +93,11 @@ Image credits: unsplash.com
               transform: translate3d(-50%,-50%,0);
 }
 .hero h1 {
-    font-size: 6em;    
+    font-size: 2em;    
     font-weight: bold;
     margin: 0;
-    padding: 0;
+    padding: 5px;
+	background-color: #000000a8;
 }
 
 .fade-carousel .carousel-inner .item .hero {
@@ -139,14 +140,20 @@ Image credits: unsplash.com
 /********************************/
 .fade-carousel .slides .slide-1, 
 .fade-carousel .slides .slide-2,
-.fade-carousel .slides .slide-3 {
+.fade-carousel .slides .slide-3,
+.fade-carousel .slides .slide-4,
+.fade-carousel .slides .slide-5,
+.fade-carousel .slides .slide-6,
+.fade-carousel .slides .slide-7 {
   height: 100vh;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  background-color: #1abc9c;
 }
 .fade-carousel .slides .slide-1 {
   background-image: url(../images/banner/banner1.jpg); 
+  background-color: #333333;
 }
 .fade-carousel .slides .slide-2 {
   background-image: url(../images/banner/banner2.jpg);
@@ -154,7 +161,23 @@ Image credits: unsplash.com
 .fade-carousel .slides .slide-3 {
   background-image: url(../images/banner/banner3.jpg);
 }
+.fade-carousel .slides .slide-4 {
+  background-image: url(../images/banner/banner4.jpg);
+}
+.fade-carousel .slides .slide-5 {
+  background-image: url(../images/banner/banner5.jpg);
+}
+.fade-carousel .slides .slide-6 {
+  background-image: url(../images/banner/banner6.jpg);
+}
+.fade-carousel .slides .slide-7 {
+  background-image: url(../images/banner/banner7.jpg);
+}
 
+
+.subpage {
+	margin-top: 65px;
+}
 /********************************/
 /*          Media Queries       */
 /********************************/
@@ -1144,7 +1167,8 @@ a:hover {
 
 .portfolio-filter button.active {
   border: 1px solid #57cbcc;
-  color: #57cbcc;
+  color: #fff;
+  background-color: #57cbcc;
 }
 
 .portfolio-items-wrapper .mix {
@@ -1225,11 +1249,13 @@ a:hover {
   Services section
 ==================================================================*/
 .service-block {
-  padding: 60px 20px;
+  padding: 30px 30px;
   border-left: 1px solid rgba(236, 239, 241, 0.07);
   border-top: 1px solid rgba(236, 239, 241, 0.07);
   margin-bottom: 40px;
-  box-shadow: 2px 2px 5px rgba(44, 44, 44, 0.3), 13px 13px 0 rgba(255, 255, 255, 0.7);
+  width: 100%;
+  height: 410px;
+  box-shadow: 1px 1px 2px rgba(44, 44, 44, 0.3), 13px 13px 0 rgba(255, 255, 255, 0.7);
 }
 
 .service-block .service-icon {
@@ -1378,6 +1404,9 @@ a:hover {
 
 .member-meta {
   padding: 15px;
+  width: 100%;
+  height: 200px;
+  overflow: auto;
 }
 
 .member-meta h4 {
