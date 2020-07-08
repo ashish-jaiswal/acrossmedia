@@ -36,6 +36,8 @@
 	<link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
 	<!-- Main Stylesheet -->
 	<link rel="stylesheet" href="css/style.css">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
 </head>
@@ -69,7 +71,7 @@ Welcome Slider
   <div class="overlay"></div>
 
   <!-- Indicators -->
-  <ol class="carousel-indicators">
+<!--   <ol class="carousel-indicators">
     <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
     <li data-target="#bs-carousel" data-slide-to="1"></li>
     <li data-target="#bs-carousel" data-slide-to="2"></li>
@@ -77,74 +79,99 @@ Welcome Slider
 	<li data-target="#bs-carousel" data-slide-to="4"></li>
 	<li data-target="#bs-carousel" data-slide-to="5"></li>
 	<li data-target="#bs-carousel" data-slide-to="6"></li>
-  </ol>
+  </ol> --> 
+  
+  <!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
   
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
-    <div class="item slides active">
+  
+    <div class="item slides active mySlides">
       <div class="slide-1"></div>
       <div class="hero">
         <hgroup>
-            <h1>Awareness campaign for ‘Aashirvaad Svasti Ghee'. Click </h1><a href="Ashirvad.html"><p style="color:red">here</a></p> to know more        
+            <h1 style="color:#ffffff">Awareness campaign for ‘Aashirvaad Svasti Ghee'. Click <p style="color:#ffffff"><a href="Ashirvad.html">here </a>to know more</p></h1>        
         </hgroup>
         </div>
     </div>
-    <div class="item slides">
+    <div class="item slides active mySlides">
       <div class="slide-2"></div>
       <div class="hero">        
         <hgroup>
-            <h1>Bank of Baroda</h1>
+            <h1 style="color:#ffffff">Bank of Baroda. Click <p style="color:#ffffff"><a href="Ashirvad.html">here </a>to know more</p></h1>
         </hgroup>       
-        <button class="btn btn-hero btn-lg" role="button">Know more</button>
+        <!-- <button class="btn btn-hero btn-lg" role="button">Know more</button> -->
       </div>
     </div>
-    <div class="item slides">
+    <div class="item slides active mySlides">
       <div class="slide-3"></div>
       <div class="hero">        
         <hgroup>
-            <h1>Kids & Parents outreach campaign for Cremica Sauces & Condiments.</h1>
+            <h1 style="color:#ffffff">Kids & Parents outreach campaign for Cremica Sauces & Condiments. Click <p style="color:white"><a href="Ashirvad.html">here </a>to know more</p></h1>
         </hgroup>
-        <button class="btn btn-hero btn-lg" role="button">Know more</button>
+        <!-- <button class="btn btn-hero btn-lg" role="button">Know more</button> -->
       </div>
     </div>
-	    <div class="item slides">
+	    <div class="item slides active mySlides">
       <div class="slide-4"></div>
       <div class="hero">        
         <hgroup>
-            <h1>Organ Donation Drive or Fortis More to Give Campaign.</h1>
+            <h1 style="color:#ffffff">Organ Donation Drive or Fortis More to Give Campaign. Click <p style="color:white"><a href="Ashirvad.html">here </a>to know more</p></h1>
         </hgroup>
-        <button class="btn btn-hero btn-lg" role="button">Know more</button>
+        <!-- <button class="btn btn-hero btn-lg" role="button">Know more</button> -->
       </div>
     </div>
-	    <div class="item slides">
+	    <div class="item slides active mySlides">
       <div class="slide-5"></div>
       <div class="hero">        
         <hgroup>
-            <h1>Multi-city speed dating sessions for Freshlook color contact lens.</h1>
+            <h1 style="color:#ffffff">Multi-city speed dating sessions for Freshlook color contact lens. Click <p style="color:white"><a href="Ashirvad.html">here </a>to know more</p></h1>
         </hgroup>
-        <button class="btn btn-hero btn-lg" role="button">Know more</button>
+        <!-- <button class="btn btn-hero btn-lg" role="button">Know more</button> -->
       </div>
     </div>
-	    <div class="item slides">
+	    <div class="item slides active mySlides">
       <div class="slide-6"></div>
       <div class="hero">        
         <hgroup>
-            <h1>Multi-city Standup Comedy Challenge for TOO YUMM! Snacks.</h1>
+            <h1 style="color:#ffffff">Multi-city Standup Comedy Challenge for TOO YUMM! Snacks. Click<p style="color:white"><a href="Ashirvad.html">here </a>to know more</p></h1>
         </hgroup>
-        <button class="btn btn-hero btn-lg" role="button">Know more</button>
+        <!-- <button class="btn btn-hero btn-lg" role="button">Know more</button> -->
       </div>
     </div>
-	    <div class="item slides">
+	    <div class="item slides active mySlides">
       <div class="slide-7"></div>
       <div class="hero">        
         <hgroup>
-            <h1>Student lead generation campaign for Toppr- the learning app</h1>
+            <h1 style="color:#ffffff">Student lead generation campaign for Toppr- the learning app. Click <p style="color:white"><a href="Ashirvad.html">here </a>to know more</p></h1>
         </hgroup>
-        <button class="btn btn-hero btn-lg" role="button">Know more</button>
+        <!-- <button class="btn btn-hero btn-lg" role="button">Know more</button> -->
       </div>
     </div>
-  </div> 
+  </div>
+	<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 </div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
 <script
   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
@@ -210,13 +237,13 @@ Welcome Slider
 			<div class="col-md-12">
 				<div class="portfolio-filter">
 					
-					<button type="button" data-filter="fashion">Fashion & Lifestyle</button>
-					<button type="button" data-filter="food">Food & Beverages</button>
-					<button type="button" data-filter="health">Healthcare</button>
+					<button type="button" onclick="filterSelection('fashion')">Fashion & Lifestyle</button>
+					<button type="button" onclick="filterSelection('food')">Food & Beverages</button>
+					<button type="button" onclick="filterSelection('healthcare')">Healthcare</button>
 					<button type="button" data-filter="CONSUMER">Consumer Electronics & Mobiles</button>
 					<button type="button" data-filter="E-COMMERCE">E-commerce</button>
 					<button type="button" data-filter="REAL ESTATE">Real Estate</button>
-					<button type="button" data-filter="EDUCATION">Education</button>
+					<button type="button" onclick="filterSelection('education')">Education</button>
 					<button type="button" data-filter="JEWELLERY">Jewellery</button>
 					<button type="button" data-filter="AUTOMOBILES">Automobiles</button>
 					<button type="button" data-filter="MEDIA">Media</button>
@@ -224,224 +251,133 @@ Welcome Slider
 				</div>
 			</div>
 		</div>
-		<div class="row filtr-container">
-			<div class="col-lg-4 filtr-item" data-category="fashion">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/FASHION1.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="fashion">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/FASHION2.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="fashion">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/FASHION3.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="fashion">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/FASHION4.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="fashion">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/FASHION5.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="food">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/Food1.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="food">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/Food2.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="food">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/Food3.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="food">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/Food4.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="food">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/Food5.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="food">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/Food6.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="food">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/Food7.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="food">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/Food8.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="food">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/Food9.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="food">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/Food10.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="food">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/Food11.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="food">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/Food12.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="food">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/Food13.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="food">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/Food14.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="health">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/health.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="CONSUMER">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/CONSUMER1.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="CONSUMER">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/CONSUMER2.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="E-COMMERCE">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/E-COMMERCE1.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="E-COMMERCE">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/E-COMMERCE2.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="E-COMMERCE">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/E-COMMERCE3.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="REAL ESTATE">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/REAL ESTATE.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="EDUCATION">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/EDUCATION1.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="EDUCATION">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/EDUCATION2.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="EDUCATION">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/EDUCATION3.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="JEWELLERY">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/JEWELLERY1.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="JEWELLERY">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/JEWELLERY2.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="AUTOMOBILES">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/AUTOMOBILES.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="MEDIA">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/MEDIA1.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="MEDIA">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/MEDIA2.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="BFSI">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/BFSI1.jpg" alt="">	
-				</div></a>
-			</div>
-			<div class="col-lg-4 filtr-item" data-category="BFSI">
-				<div class="portfolio-block">
-				<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
-					<img class="img-responsive" src="images/portfolio/BFSI2.jpg" alt="">	
-				</div></a>
+		<div class="align-items-center">
+			<div class="row justify-content-center">
+				<div class="col-sm-2 col-sm-offset-1 filterDiv food">
+					<div class="portfolio-block">
+					<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
+						<img class="img-responsive" src="images/portfolio/Food14.jpg" alt="">	
+					</div></a>
+				</div>
+				<div class="col-sm-2 filterDiv food">
+					<div class="portfolio-block">
+					<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
+						<img class="img-responsive" src="images/portfolio/Food13.jpg" alt="">	
+					</div></a>
+				</div>
+				<div class="col-sm-2 col-sm-2 filterDiv food">
+					<div class="portfolio-block">
+					<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
+						<img class="img-responsive" src="images/portfolio/Food12.jpg" alt="">	
+					</div></a>
+				</div>
+				<div class="col-sm-2 filterDiv food">
+					<div class="portfolio-block">
+					<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
+						<img class="img-responsive" src="images/portfolio/Food11.jpg" alt="">	
+					</div></a>
+				</div>
+				<div class="col-sm-2 filterDiv food">
+					<div class="portfolio-block">
+					<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
+						<img class="img-responsive" src="images/portfolio/Food10.jpg" alt="">	
+					</div></a>
+				</div>
+				
 			</div>
 		</div>
+		
+		<div class="align-items-center">
+			<div class="row justify-content-center">
+				<div class="col-sm-2 col-sm-offset-1 filterDiv fashion" data-category="fashion">
+					<div class="card card-dark bg-dark">
+						<div class="card-body">
+							<div class="portfolio-block">
+						<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
+							<img class="img-responsive" src="images/portfolio/FASHION5.jpg" alt="">	
+						</div></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2 filterDiv fashion">
+					<div class="card card-dark bg-dark">
+						<div class="card-body">
+							<div class="portfolio-block">
+						<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
+							<img class="img-responsive" src="images/portfolio/FASHION4.jpg" alt="">	
+						</div></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2 filterDiv fashion">
+					<div class="card card-dark bg-dark">
+						<div class="card-body">
+							<div class="portfolio-block">
+						<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
+							<img class="img-responsive" src="images/portfolio/FASHION3.jpg" alt="">	
+						</div></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2 filterDiv fashion">
+					<div class="card card-dark bg-dark">
+						<div class="card-body">
+							<div class="portfolio-block">
+						<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
+							<img class="img-responsive" src="images/portfolio/FASHION2.jpg" alt="">	
+						</div></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2 filterDiv fashion">
+					<div class="card card-dark bg-dark">
+						<div class="card-body">
+							<div class="portfolio-block">
+						<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
+							<img class="img-responsive" src="images/portfolio/FASHION1.jpg" alt="">	
+						</div></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="align-items-center">
+			<div class="row justify-content-center">
+				<div class="col-sm-2 col-sm-offset-1 filterDiv education">
+					<div class="portfolio-block">
+					<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
+						<img class="img-responsive" src="images/portfolio/EDUCATION1.jpg" alt="">	
+					</div></a>
+				</div>
+				<div class="col-sm-2 filterDiv education">
+					<div class="portfolio-block">
+					<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
+						<img class="img-responsive" src="images/portfolio/EDUCATION2.jpg" alt="">	
+					</div></a>
+				</div>
+				<div class="col-sm-2 col-sm-2 filterDiv education">
+					<div class="portfolio-block">
+					<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
+						<img class="img-responsive" src="images/portfolio/EDUCATION3.jpg" alt="">	
+					</div></a>
+				</div>
+				<div class="col-sm-2 filterDiv education">
+					<div class="portfolio-block">
+					<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
+						<img class="img-responsive" src="images/portfolio/EDUCATION2.jpg" alt="">	
+					</div></a>
+				</div>
+				<div class="col-sm-2 filterDiv education">
+					<div class="portfolio-block">
+					<a href="desktop/clients/www.acrossmedia.com/freshlook/index.html">
+						<img class="img-responsive" src="images/portfolio/EDUCATION1.jpg" alt="">	
+					</div></a>
+				</div>
+			</div>
+		</div>
+		
+		
 	</div> <!-- end container -->
 </section>
 		
@@ -631,7 +567,7 @@ Having served organizations like HT & Zee in the events team, Ramona thinks on h
 			<!-- end team member -->
 			
 			<!-- team member -->
-			<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
+			<div class="col-md-4 col-md-offset-2 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
                <div class="team-member">
 					<div class="member-photo">
 						<!-- member photo -->
@@ -1022,6 +958,38 @@ Having served organizations like HT & Zee in the events team, Ramona thinks on h
 		<script type="text/javascript" src="plugins/wow/dist/wow.min.js"></script>
 		<!-- Custom js -->
 		<script type="text/javascript" src="js/script.js"></script>
-		
+		<script>
+			filterSelection("all")
+				function filterSelection(c) {
+				  var x, i;
+				  x = document.getElementsByClassName("filterDiv");
+				  if (c == "all") c = "";
+				  for (i = 0; i < x.length; i++) {
+					w3RemoveClass(x[i], "show");
+					if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+				  }
+				}
+
+				function w3AddClass(element, name) {
+				  var i, arr1, arr2;
+				  arr1 = element.className.split(" ");
+				  arr2 = name.split(" ");
+				  for (i = 0; i < arr2.length; i++) {
+					if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+				  }
+				}
+
+				function w3RemoveClass(element, name) {
+				  var i, arr1, arr2;
+				  arr1 = element.className.split(" ");
+				  arr2 = name.split(" ");
+				  for (i = 0; i < arr2.length; i++) {
+					while (arr1.indexOf(arr2[i]) > -1) {
+					  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+					}
+				  }
+				  element.className = arr1.join(" ");
+				}
+		</script>	
     </body>
 </html>
