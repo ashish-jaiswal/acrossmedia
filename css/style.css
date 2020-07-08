@@ -69,11 +69,26 @@ p {
               transform: translate3d(-50%,-50%,0);
 }
 .hero h1 {
-    font-size: 2em;    
+    font-size: 1.6em;    
     font-weight: bold;
     margin: 0;
-    padding: 5px;
+    padding: 18px;
 	background-color: #000000a8;
+}
+.hero p {    
+    font-weight: normal;
+	color: #ffffff;
+    margin: 0;
+	font-size: 0.85em;
+}
+.hero h1 a:hover {
+  color: #E72E3C;
+}
+.hero p a:hover {
+  color: #E72E3C;
+}
+.hero a{
+	color: #E72E3C;
 }
 
 .fade-carousel .carousel-inner .item .hero {
@@ -704,7 +719,7 @@ a:hover {
 
 .navigation .logo img {
   height: auto;
-  width: 140px;
+  /* width: 140px; */
 }
 
 .navigation .navigation-menu li.active a {
@@ -1123,32 +1138,89 @@ a:hover {
 /*=================================================================
   Portfolio section
 ==================================================================*/
+.filterDiv {
+  
+  /* width: 19%; */
+  text-align: center;
+  padding: 10px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.align-items-center {
+  -ms-flex-align: center!important;
+  align-items: center!important;
+}
 .portfolio-filter {
   margin-bottom: 40px;
   text-align: center;
 }
 
 .portfolio-filter button {
-  border: none;
-  outline: none;
-  border: 1px solid rgba(236, 239, 241, 0.07);
-  background: transparent;
-  display: inline-block;
-  font-size: 16px;
-  padding: 6px 20px;
-  font-weight: 700;
-  color: #737f8a;
-  transition: .3s all;
+    outline: none;
+    border: 1px solid rgba(236, 239, 241, 0.07);
+    background: transparent;
+    display: inline-block;
+    font-size: 16px;
+    padding: 16px 35px;
+    font-weight: 700;
+    color: #737f8a;
+    transition: .3s all;
+    margin-bottom: 12px;
+	transition: transform .3s;
 }
 
-.portfolio-filter button.active {
+
+/* .active {
   border: 1px solid #57cbcc;
-  color: #fff;
+  color: #57cbcc;
+  background-color: #57cbcc;
+} */
+.f-wrapper{
+ 		margin: 0 auto;
+ 		width: 90%;
+ 		margin: 0 auto;
+ 		display: flex;
+ 		justify-content: space-evenly;
+ 		
+ 	}
+
+	.f-wrapper:last-child{
+		border-bottom: 0 solid #fff;
+	}	
+
+ 	.items{
+ 		color: #fff;
+ 		left: 0;
+ 	}
+	
+ 	.items p{
+ 		margin: 15px;
+ 	}
+
+.portfolio-filter button:hover {
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari 3-8 */
+  transform: scale(1.15);
+	border: none;
+	color: #ffffff;
   background-color: #57cbcc;
 }
 
 .portfolio-items-wrapper .mix {
   padding: 5px;
+}
+
+.col- {
+	text-align: center;
+		padding: 20px;
+		font-size: 28px;
+		background: radial-gradient(ellipse at center, #ff6600 0%,#ce3400 100%);
+		border: 3px solid #fff;
+		color: #000;
 }
 
 .portfolio-block {
