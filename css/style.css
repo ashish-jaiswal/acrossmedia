@@ -135,7 +135,9 @@ p {
 .fade-carousel .slides .slide-4,
 .fade-carousel .slides .slide-5,
 .fade-carousel .slides .slide-6,
-.fade-carousel .slides .slide-7 {
+.fade-carousel .slides .slide-7,
+.fade-carousel .slides .slide-8 
+{
   height: 100vh;
   background-size: cover;
   background-position: center center;
@@ -164,7 +166,9 @@ p {
 .fade-carousel .slides .slide-7 {
   background-image: url(../images/banner/banner7.jpg);
 }
-
+.fade-carousel .slides .slide-8 {
+  background-image: url(../images/banner/banner8.jpg);
+}
 
 .subpage {
 	margin-top: 65px;
@@ -409,7 +413,7 @@ a:hover {
 }
 
 .section {
-  padding: 100px 0;
+  padding: 30px 0;
 }
 
 @media (max-width: 480px) {
@@ -1134,6 +1138,64 @@ a:hover {
   text-transform: uppercase;
   margin: 20px 0;
 }
+
+
+/********************************/
+/*       OUR-WORKS-5 COLOUMN GRID       */
+/********************************/
+.col-2dot4,
+.col-sm-2dot4,
+.col-md-2dot4,
+.col-lg-2dot4,
+.col-xl-2dot4 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+	
+}
+.col-2dot4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+@media (min-width: 540px) {
+    .col-sm-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 720px) {
+    .col-md-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 960px) {
+    .col-lg-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 1140px) {
+    .col-xl-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+
+
 
 /*=================================================================
   Portfolio section
