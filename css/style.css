@@ -55,12 +55,11 @@ p {
 /********************************/
 .hero {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     z-index: 3;
     color: #fff;
     text-align: center;
-    text-transform: uppercase;
     text-shadow: 1px 1px 0 rgba(0,0,0,.75);
       -webkit-transform: translate3d(-50%,-50%,0);
          -moz-transform: translate3d(-50%,-50%,0);
@@ -69,11 +68,10 @@ p {
               transform: translate3d(-50%,-50%,0);
 }
 .hero h1 {
-    font-size: 1.6em;    
-    font-weight: bold;
+    font-size: 1.6em; 
     margin: 0;
     padding: 18px;
-	background-color: #000000a8;
+	background-color: #000000cc;
 }
 .hero p {    
     font-weight: normal;
@@ -141,7 +139,7 @@ p {
   height: 100vh;
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-color: #1abc9c;
 }
 .fade-carousel .slides .slide-1 {
@@ -180,7 +178,9 @@ p {
     .hero { width: 980px; }    
 }
 @media screen and (max-width: 640px){
-    .hero h1 { font-size: 4em; }    
+    .hero h1 { font-size: 1.6em; 
+	width: 380px;
+	}    
 }
 
 
@@ -476,6 +476,23 @@ a:hover {
   height: 40px;
 }
 
+.video {
+	margin-bottom: 40px;
+	width: 100%;
+}
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .sk-cube-grid .sk-cube {
   width: 33%;
   height: 33%;
