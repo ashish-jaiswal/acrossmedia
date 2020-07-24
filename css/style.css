@@ -179,7 +179,7 @@ p {
 }
 @media screen and (max-width: 640px){
     .hero h1 { font-size: 1.6em; 
-	width: 380px;
+	width: 280px;
 	}    
 }
 
