@@ -143,29 +143,29 @@ p {
   background-color: #1abc9c;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url(../images/banner/banner1.jpg); 
+  /* background-image: url(../images/banner/banner1.jpg);  */
   background-color: #333333;
 }
 .fade-carousel .slides .slide-2 {
-  background-image: url(../images/banner/banner2.jpg);
+  /* background-image: url(../images/banner/banner2.jpg); */
 }
 .fade-carousel .slides .slide-3 {
-  background-image: url(../images/banner/banner3.jpg);
+  /* background-image: url(../images/banner/banner3.jpg); */
 }
 .fade-carousel .slides .slide-4 {
-  background-image: url(../images/banner/banner4.jpg);
+  /* background-image: url(../images/banner/banner4.jpg); */
 }
 .fade-carousel .slides .slide-5 {
-  background-image: url(../images/banner/banner5.jpg);
+  /* background-image: url(../images/banner/banner5.jpg); */
 }
 .fade-carousel .slides .slide-6 {
-  background-image: url(../images/banner/banner6.jpg);
+  /* background-image: url(../images/banner/banner6.jpg); */
 }
 .fade-carousel .slides .slide-7 {
-  background-image: url(../images/banner/banner7.jpg);
+  /* background-image: url(../images/banner/banner7.jpg); */
 }
 .fade-carousel .slides .slide-8 {
-  background-image: url(../images/banner/banner8.jpg);
+  /* background-image: url(../images/banner/banner8.jpg); */
 }
 
 .subpage {
@@ -175,12 +175,26 @@ p {
 /*          Media Queries       */
 /********************************/
 @media screen and (min-width: 980px){
-    .hero { width: 980px; }    
+    .hero { width: 980px; } 
+.mobile{
+   display: none;	
+}
 }
 @media screen and (max-width: 640px){
     .hero h1 { font-size: 1.6em; 
 	width: 280px;
 	}    
+}
+
+
+@media only screen and (max-width: 767px){           .web{
+     display: none;
+   }
+
+   .mobile{
+     display: block;
+	 height: 100vh;
+   }
 }
 
 
@@ -575,6 +589,7 @@ a:hover {
 
 .title {
   padding-bottom: 60px;
+  margin-top: 60px;
 }
 
 .title h2 {
@@ -1306,6 +1321,14 @@ a:hover {
   position: relative;
   margin-bottom: 20px;
 }
+.img-responsive{
+transition: transform .2s;
+}
+.img-responsive:hover {
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari 3-8 */
+  transform: scale(1.15);
+}
 
 /*.portfolio-block:before {
   transition: all 0.3s ease-in-out;
@@ -1568,7 +1591,7 @@ a:hover {
 }
 
 .client-thumb img {
-  border-radius: 50%;
+  /* border-radius: 50%; */
   margin: 0 auto;
   max-width: 115px;
   width: 100%;
